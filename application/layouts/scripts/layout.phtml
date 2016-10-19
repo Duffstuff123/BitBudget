@@ -1,0 +1,71 @@
+<?php
+    echo $this->doctype();
+    echo $this->headLink();
+    echo $this->headScript();
+?>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>BitBudget</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</head>
+<body>    
+    <div id="container">
+        <div id="headerContainer">
+            <div id="header">
+                
+                <div class="iconContainer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                
+                <div id="header-logo">
+                    <b id="bit">Bit</b><b id="budget">Budget</b>
+                </div>
+                
+                <div id="loginLogo">
+                    <i class="fa fa-lock"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="menuContainer">
+            <div id="menu">
+                <div class="w3-row">
+                    <div class="w3-col l3 s12 home w3-center"><p><a href="<?php $this->baseUrl() ?>index">Home</a></p></div>
+                    <div class="w3-col l3 s12 entry w3-center"><p><a href="<?php $this->baseUrl() ?>entry">Entry</a></p></div>
+                    <div class="w3-col l3 s12 accounts w3-center"><p><a href="<?php $this->baseUrl() ?>accounts">Accounts</a></p></div>
+                    <div class="w3-col l3 s12 reports   w3-center"><p><a href="<?php $this->baseUrl() ?>reports">Reports</a></p></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="content">
+            <?php 
+                echo $this->layout()->content;
+            ?>
+        </div>
+        
+        <div id="footer">
+        <table>
+                <tr>
+                    <td>
+                        FOOTER INFO HERE
+                    </td>
+                </tr>
+        </table>
+    </div>
+    </div>
+
+    
+ 
+</body>
+    
+</html>
