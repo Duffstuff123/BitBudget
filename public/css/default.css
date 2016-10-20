@@ -211,6 +211,22 @@ footer{
 
 
 
+#LoginForm{
+    text-align: center;
+}
+
+#Login{
+    background-color:  #000;
+    min-height: 50px;
+    vertical-align: middle;
+    
+}
+
+.login{
+    background-color: #689F38;
+}
+
+
 
 /*Menu Icon   http://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon_js*/
 .iconContainer {

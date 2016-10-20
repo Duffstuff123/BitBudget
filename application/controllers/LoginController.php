@@ -13,6 +13,19 @@ class LoginController extends Zend_Controller_Action
         // action body
     }
 
-
+    public function logoutAction(){
+        $this->_helper->layout->disableLayout();
+        $this->_helper->viewRenderer->setNoRender(TRUE);
+        $this->view->disable();
+    }
+    
+    public function loginAction(){
+        $this->_helper->layout->disableLayout();
+        $this->_helper->viewRenderer->setNoRender(TRUE);
+    }
+    
+    public function createAction(){
+     
+    }
 }
 

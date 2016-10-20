@@ -5,7 +5,6 @@
  */
     function openMenu(x) {
         x.classList.toggle("change");
-        console.log(x);
         if($('#menuContainer').is(':visible')){
             $('#menuContainer').slideUp( 400, function() {
                 // Animation complete.
@@ -27,5 +26,14 @@
         event.preventDefault();
         $('#menuContainer').removeClass('change');
         window.location = "/login";
+    }
+    
+    
+    function generalClick(x){
+        event.preventDefault();
+        console.log(x);
+        var url = x.getAttribute('href');
+        $('#menuContainer').removeClass('change');
+        window.location = url;
     }
 
