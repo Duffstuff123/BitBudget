@@ -978,28 +978,23 @@ html .ui-bar-a a,
 html .ui-body-a a,
 html body .ui-group-theme-a a {
 	font-weight: bold;
-        -webkit-transition:color .2s ease-in;
 }
 .ui-page-theme-a a:visited,
 html .ui-bar-a a:visited,
 html .ui-body-a a:visited,
 html body .ui-group-theme-a a:visited {
-    -webkit-transition:color .2s ease-in;
 }
 .ui-page-theme-a a:hover,
 html .ui-bar-a a:hover,
 html .ui-body-a a:hover,
 html body .ui-group-theme-a a:hover {
-	color: #fff /*{a-link-hover}*/;
         text-decoration: none;
-        -webkit-transition:color .2s ease-in;
 }
 .ui-page-theme-a a:active,
 html .ui-bar-a a:active,
 html .ui-body-a a:active,
 html body .ui-group-theme-a a:active {
 	color: #fff /*{a-link-active}*/;
-        -webkit-transition:color .2s ease-in;
 }
 /* Button up */
 .ui-page-theme-a .ui-btn,

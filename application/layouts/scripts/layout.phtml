@@ -1,4 +1,16 @@
-<?php
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BitBudget</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+    
+    
+    <?php
     $this->headLink()->prependStylesheet('/css/default.css')
                      ->prependStylesheet('/css/w3css.css')
                      ->prependStylesheet('/css/jquery.mobile-1.4.5.css');
@@ -12,17 +24,6 @@
     echo $this->headScript();
 ?>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-    
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>BitBudget</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-</head>
     
 <body>    
     <div id="container">
@@ -40,7 +41,9 @@
                 </div>
                 
                 <div id="loginLogo">
-                    <i class="fa fa-lock"></i>
+                    <a href="/login" onclick="logOut()">
+                        <i class="fa fa-lock"></i>
+                    </a>
                 </div>
             </div>
         </div>

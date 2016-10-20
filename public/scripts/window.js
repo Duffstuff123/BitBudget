@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-function openMenu(x) {
+    function openMenu(x) {
         x.classList.toggle("change");
         console.log(x);
         if($('#menuContainer').is(':visible')){
@@ -14,12 +14,18 @@ function openMenu(x) {
             $('#menuContainer').slideDown( 400, function() {
                 // Animation complete.
                  $('#menu a').click(function(event) {
-                     event.preventDefault();
+                    event.preventDefault();
                     $('#menuContainer').removeClass('change');
                     var url = $(this).attr('href');
                     window.location = url;
-                  });
+                });
               });
         }
+    }
+    
+    function logOut(x){
+        event.preventDefault();
+        $('#menuContainer').removeClass('change');
+        window.location = "/login";
     }
 
