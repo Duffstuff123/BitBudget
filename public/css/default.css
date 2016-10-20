@@ -52,7 +52,8 @@ body{
 
 #container{
     text-shadow: none;
-    padding:50px 0;
+    padding-top:50px;
+    padding-bottom: 70px;
     position:absolute;
     top:0;
     bottom:0;
@@ -66,19 +67,19 @@ body{
     width: 100%;
     margin: auto;
     padding: 5px;
-    border-bottom: 2px solid #9c9c9c;    
+    border-bottom: 2px solid #e4e4e4;    
     font-size: 30px;    
     
-    margin-top:-50px; height:50px;
-    
-    -webkit-box-shadow: 1px 1px 5px 0px rgba(189,189,189,1);
-    -moz-box-shadow: 1px 1px 5px 0px rgba(189,189,189,1);
-    box-shadow: 1px 1px 5px 0px rgba(189,189,189,1);
+    margin-top:-50px;
+    height:50px;
 }
 
 #loginLogo{
     float: right;
     margin-right: 10px;
+    margin-top: -3px;
+    border-left: 2px solid #e4e4e4;
+    padding-left: 10px;
 }
 
 #bit{
@@ -92,6 +93,9 @@ body{
 #header-logo{
     float: left;
     margin-left:  10px;
+    margin-top: -3px;
+    border-left: 2px solid #e4e4e4;
+    padding-left: 10px;
 }
 
 
@@ -100,20 +104,18 @@ body{
     width: 100%;
     margin: auto;
     display: none;
-    -webkit-box-shadow: 1px 1px 5px 0px rgba(189,189,189,1);
-    -moz-box-shadow: 1px 1px 5px 0px rgba(189,189,189,1);
-    box-shadow: 1px 1px 5px 0px rgba(189,189,189,1);
+
 }
 
 #menu{
-    background-color: #455A64;
+    background-color: #2d2d2d;
     color: white;
-    border-bottom: 2px solid #9c9c9c;    
+    border-bottom: 2px solid #e4e4e4;    
 }
 
 
 .home{
-    border-bottom: 4px solid #455A64;
+    border-bottom: 4px solid #2d2d2d;
     -webkit-transition:color .2s ease-in;
 }
 .home:hover{
@@ -126,7 +128,7 @@ body{
 }
 
 .entry{
-    border-bottom: 4px solid #455A64;
+    border-bottom: 4px solid #2d2d2d;
     -webkit-transition:color .2s ease-in;
 }
 .entry:hover{
@@ -138,7 +140,7 @@ body{
 }
 
 .accounts{
-    border-bottom: 4px solid #455A64;
+    border-bottom: 4px solid #2d2d2d;
     -webkit-transition:color .2s ease-in;
 }
 .accounts:hover{
@@ -150,7 +152,7 @@ body{
 }
 
 .reports{
-    border-bottom: 4px solid #455A64;
+    border-bottom: 4px solid #2d2d2d;
 }
 .reports:hover{
     border-bottom: 4px solid #EC407A;
@@ -190,10 +192,12 @@ tr:nth-child(even) {
     height:50px;
     width: 100%;
     margin-top: 20px;
+    background-color: #2d2d2d;
+    color: #f9f9f9;
 }
 
 footer{
-        height: 100%;
+    height: 100%;
 }
 
 
