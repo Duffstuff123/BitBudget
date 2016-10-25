@@ -62,12 +62,12 @@ body{
 }
 
 #headerContainer{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(39, 39, 39);
     float: left;
     width: 100%;
     margin: auto;
     padding: 5px;
-    border-bottom: 2px solid #464646;    
+    border-bottom: 2px solid #7d7d7d;    
     font-size: 30px;    
     
     margin-top:-50px;
@@ -81,7 +81,7 @@ body{
 #loginLogo{
     float: right;
     margin-right: 10px;
-    border-left: 2px solid #464646;
+    border-left: 2px solid #7d7d7d;
     padding-left: 10px;
     height: 100%;
 }
@@ -91,7 +91,7 @@ body{
 }
 
 #bit{
-    color: #1a1a1a;
+    color: #f9f9f9;
 }
 
 #budget{
@@ -101,7 +101,7 @@ body{
 #header-logo{
     float: left;
     margin-left:  10px;
-    border-left: 2px solid #464646;
+    border-left: 2px solid #7d7d7d;
     padding-left: 10px;
     height: 100%;
     font-size: 25px;
@@ -119,16 +119,15 @@ body{
 #menu{
     background-color: #1a1a1a;
     color: white;
-    /*border-bottom: 2px solid #e4e4e4;*/    
 }
 
 
-.home{
-    border-bottom: 4px solid #464646;
+.home, .entry, .accounts, .reports{
+    border-bottom: 2px solid #7d7d7d;
     -webkit-transition:color .2s ease-in;
 }
 .home:hover{
-    border-bottom: 4px solid #689f38;
+    border-bottom: 2px solid #689f38;
     -webkit-transition:color .2s ease-in;
     color: #fff;
 }
@@ -136,35 +135,24 @@ body{
     color: #689f38;
 }
 
-.entry{
-    border-bottom: 4px solid #464646;
-    -webkit-transition:color .2s ease-in;
-}
 .entry:hover{
-    border-bottom: 4px solid #F44336;
+    border-bottom: 2px solid #F44336;
     -webkit-transition:color .2s ease-in;
 }
 .entry a{
     color: #F44336
 }
 
-.accounts{
-    border-bottom: 4px solid #464646;
-    -webkit-transition:color .2s ease-in;
-}
 .accounts:hover{
-    border-bottom: 4px solid #2196F3;
+    border-bottom: 2px solid #2196F3;
     -webkit-transition:color .2s ease-in;
 }
 .accounts a{
     color: #2196F3
 }
 
-.reports{
-    border-bottom: 4px solid #464646;
-}
 .reports:hover{
-    border-bottom: 4px solid #EC407A;
+    border-bottom: 2px solid #EC407A;
 }
 .reports a{
     color: #EC407A
@@ -189,6 +177,14 @@ tr:nth-child(even) {
 }
 
 
+#subNavigation{
+    width: 100%;
+    padding: 5px;
+    border-bottom: 2px solid #e8e8e8;
+    margin-bottom: 5px;
+}
+
+
 #content{
     max-width: 1024px;
     margin: auto;
@@ -197,12 +193,13 @@ tr:nth-child(even) {
 
 
 #footer{
-    margin-bottom:-50px;
+    margin-bottom:-48px;
     height:50px;
     width: 100%;
     margin-top: 20px;
     background-color: #1a1a1a;
     color: #f9f9f9;
+    border-top: 2px solid #7d7d7d;
 }
 
 footer{
@@ -238,9 +235,13 @@ footer{
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #1a1a1a;
+    background-color: #e8e8e8;
     margin: 6px 0;
     transition: 0.4s;
+}
+
+.fa-lock{
+    color: #e8e8e8;
 }
 
 /* Rotate first bar */
