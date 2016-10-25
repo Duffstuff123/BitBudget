@@ -37,7 +37,10 @@
                 </div>
                 
                 <div id="header-logo">
-                    <b id="bit">Bit</b><b id="budget">Budget</b>
+                    <a href="/" onclick="generalClick(this)">
+                        <b id="bit">Bit</b>
+                        <b id="budget">Budget</b>
+                    </a>
                 </div>
                 
                 <div id="loginLogo">
@@ -57,6 +60,30 @@
                     <div class="w3-col l3 s12 reports   w3-center"><p><a href="/reports">Reports</a></p></div>
                 </div>
             </div>
+        </div>
+        <div id="subNavigation">
+            <a href="/<?php  echo Zend_Controller_Front::getInstance()->getRequest()->getControllerName()?>" onclick="generalClick(this)">
+                <?php
+                    if(Zend_Controller_Front::getInstance()->getRequest()->getControllerName() != "index"){
+                    echo strtoupper(Zend_Controller_Front::getInstance()->getRequest()->getControllerName());
+                    }else{
+                        echo "HOME";
+                    }
+                ?>
+            </a>
+            
+            <?php
+            if(Zend_Controller_Front::getInstance()->getRequest()->getActionName() != "index"){
+            ?>
+            /
+            <a href="/<?php echo Zend_Controller_Front::getInstance()->getRequest()->getControllerName();?>/<?php echo Zend_Controller_Front::getInstance()->getRequest()->getActionName()?>" onclick="generalClick(this)">
+                <?php
+                    echo strtoupper(Zend_Controller_Front::getInstance()->getRequest()->getActionName());
+                ?>
+            </a>
+            <?php
+            }
+            ?>
         </div>
 
 
